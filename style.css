@@ -492,36 +492,127 @@ img {
 
 
 /* =========================
-   EDUCATION
+   EDUCATION & CERTIFICATIONS
 ========================= */
 
-.education-grid {
+.subsection-title {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 22px;
+}
+
+.certification-heading {
+  margin-top: 70px;
+}
+
+
+.certifications-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.education-card {
-  display: flex;
-  gap: 18px;
+
+.certification-card {
   padding: 28px;
+  background: #f8fafc;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  background: #f8fafc;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.education-icon {
-  font-size: 28px;
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  border-color: #8b5cf6;
+  box-shadow: 0 12px 30px rgba(30, 20, 70, 0.08);
 }
 
-.education-card h3 {
-  font-size: 17px;
-  margin-bottom: 5px;
+
+.certification-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.education-card p {
+
+.certification-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 48px;
+  height: 36px;
+
+  padding: 0 10px;
+
+  border-radius: 6px;
+
+  background: #ede9fe;
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+.certification-date {
+  font-size: 13px;
   color: #6b7280;
+}
+
+
+.certification-card h3 {
+  font-size: 18px;
+  line-height: 1.35;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+
+.certification-issuer {
   font-size: 14px;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 8px;
+}
+
+
+.credential-id {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 18px;
+  word-break: break-word;
+}
+
+
+.credential-link {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #6d28d9;
+}
+
+
+.credential-link:hover {
+  color: #5b21b6;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 650px) {
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 
